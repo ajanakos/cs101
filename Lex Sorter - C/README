@@ -1,0 +1,15 @@
+List.c
+Bi-directional queue consisting if linked nodes which hold integers.
+
+List.h
+Header file of List.c
+
+Lex.c
+Uses functions of List.c to Lexocographically sort an input text file
+then write to new file
+
+Makefile
+Compiles project and makes executable file
+
+ListClient.c 
+Tests functionality of List.c

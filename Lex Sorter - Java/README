@@ -1,0 +1,6 @@
+List.java - List data structure 
+ListClient.java - Tests functions of List
+Lex.java - Uses List to sort input file into lex order then write to file
+Makefile
+README
+
