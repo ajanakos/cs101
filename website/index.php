@@ -18,35 +18,46 @@
 	
 	<header class="mainHeader">
 
-			<img src="https://vmfocus.files.wordpress.com/2015/02/vmfocus-wide-logo.png?w=389 height="100" width="100">
+			<img src="https://vmfocus.files.wordpress.com/2015/02/vmfocus-wide-logo.png?w=389 height="20" width="100">
 
-		<nav class="navbar navbar-default">
-			<ul class="nav navbar-nav">
-				<li<?php if($pageid == 1) { echo ' class="active"';} ?>><a href="?page=1">Home</a></li>
-				<li<?php if($pageid == 2) { echo ' class="active"';} ?>><a href="?page=2">About</a></li>
-				<li<?php if($pageid == 3) { echo ' class="active"';} ?>><a href="?page=3">FAQ</a></li>
-				<li<?php if($pageid == 4) { echo ' class="active"';} ?>><a href="?page=4">Contact</a></li>
-			</ul>
-		</nav>
+			<?php include('template/navigation.php'); ?>
 	
 	</header>
-
-		
-		<div class="content">
-		
+	
+		<div class="header">
+	
 			<h1><?php echo $page['header']; ?></h1>
 			
-			<p><?php echo $page['body']; ?></p>
-		
 		</div>
 		
-
-	
-	<footer class="footer">
+		<div class="content">
+			
+			<div class="content-1">
+			
+				<p><?php echo $page['body']; ?></p>
+			
+			</div>
+			
+			<div class="content-2">
+			
+				<p><?php echo $page['body']; ?></p>
+			
+			</div>
+			
+			<div class="content-3">
+			
+				<p><?php echo $page['body']; ?></p>
+			
+			</div>
+			
+		</div> <!-- end content --> 
 		
-			<p>My footer</p>	
+	
+		
+		
 
-	</footer>
+		<?php include('template/footer.php'); ?>
+	
 	
 </body>
 

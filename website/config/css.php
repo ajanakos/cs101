@@ -18,45 +18,119 @@
 
 <style>
 		
-	html {
-		position: relative;
-		min-height: 100%;
-	}
+	
 	body {
-		margin-bottom: 60px;
 		background-color: #D4CED9;
 		color: #000305;
 		text-align: left;
 		margin: 0 auto;
-		width: 70%;
+		width: 95%;
 		clear: both;
 			}
+	
+	
 	.mainHeader img {
 		width: 100%;
-		border-radius: 40px;
-		margin: 0 auto;
-		padding: 2% 0;
+		height: auto;
+		margin: 2% 0;
+		border-radius: 30px;
+		-moz-border-radius: 30px;
+		-webkit-border-radius: 30px;
+		
 	}
 	
 	.mainHeader nav {
 		background-color: #666;
+		height: 40px;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	
+	.mainHeader nav ul {
+		list-style: none;
+		margin: 0 auto;
+	}
+	
+	.mainHeader nav ul li {
+		float: left;
+		display: inline;
+	}
+	
+	.mainHeader nav a:link, .mainHeader nav a:visited {
+		color: #FFF;
+		display: inline-block;
+		padding: 10px 25px;
+		height: 40px;
+	} 
+	
+	.mainHeader nav a:hover, .mainHeader nav a:active, 
+	.mainHeader nav .active a:link, .mainHeader nav .active a:visited {
+		background-color: #D9D8C3;
+		text-shadow: none;
+		color: black;
+	}
+	
+	.mainHeader nav li a {
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	
+	.header {
+		text-align: center;
+	}		
+	.content {
+
+		border-radius: 5px;
+		width: 100%;
+		float: left;
+	}
+	
+	.content-1 {
+		background-color: #F5F5E9;
+		padding: 2% 2% 2% 2%;
+		border-radius: 5px;
+		margin: 5% 0;
+		width: 100%;
+		
+		
+	}
+	
+	.content-2 {
+		background-color: #F5F5E9;
+		padding: 2% 2% 2% 2%;
+		border-radius: 5px;
+		margin: 5% 0;
+		width: 100%;
+		
+	}
+
+	.content-3 {
+		background-color: #F5F5E9;
+		padding: 2% 2% 2% 2%;
+		border-radius: 5px;
+		margin: 5% 0;
+		width: 100%;
+		
 	}
 	
 	.footer {
-		position: absolute;
-		bottom: 0;
 		width: 100%;
-		height: 60px;
 		background-color: #666;
+		float: left;
 		border-radius: 5px;
-		margin: 0 auto;
-		width: 70%;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		margin: 2% 0;
+		padding: 2% 0;
 	}
+	
 	.footer p {
-		text-align: center;
 		width: 92%;
-		margin: 3% auto;
+		margin: 0 auto;
 		color: #FFF
+		text-align: center;
 	}
 			
 </style>
