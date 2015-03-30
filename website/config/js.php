@@ -13,3 +13,14 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>		
+
+<script>
+	
+	$(document).ready(function() {
+		$('#debug-console').hide();	
+		$('#debug').click(function() {
+			$('#debug-console').toggle();
+		});
+	});
+	
+</script>

@@ -11,54 +11,59 @@
 	
 	<?php include('config/css.php'); ?>
 	<?php include('config/js.php'); ?>
+	
+	<button id="debug" class="btn btn-default">debug</button>
+	
 
 </head>
 
 <body>
 	
-	<header class="mainHeader">
-
-			<img src="https://vmfocus.files.wordpress.com/2015/02/vmfocus-wide-logo.png?w=389 height="20" width="100">
-
-			<?php include('template/navigation.php'); ?>
-	
-	</header>
-	
-		<div class="header">
-	
-			<h1><?php echo $page['header']; ?></h1>
-			
-		</div>
-		
-		<div class="content">
-			
-			<div class="content-1">
-			
-				<p><?php echo $page['body']; ?></p>
-			
-			</div>
-			
-			<div class="content-2">
-			
-				<p><?php echo $page['body']; ?></p>
-			
-			</div>
-			
-			<div class="content-3">
-			
-				<p><?php echo $page['body']; ?></p>
-			
-			</div>
-			
-		</div> <!-- end content --> 
-		
 	
 		
+		<?php include('template/logo.php'); ?>
+		
+		
+		<header class="mainHeader">
+		
+				
+	
+				
+				
+				<?php include('template/navigation.php'); ?>
+				
+				
+		</header>
 		
 
-		<?php include('template/footer.php'); ?>
-	
-	
+			
+			<div class="header">
+		
+				<h1><?php echo $page['header']; ?></h1>
+				
+			</div>
+			
+			<div class="content">
+				
+				<div class="content-1">
+				
+					<p><?php echo $page['body']; ?></p>
+				
+				</div>
+				
+				
+			</div> <!-- end content --> 
+			
+			<?php include('template/footer.php'); ?>
+			
+			<div id="debug-console">
+				<pre>
+				<?php echo print_r($page); ?> 
+				</pre>
+			</div>
+		
+
+		
 </body>
 
 </html>

@@ -1,1 +1,3 @@
-<nav><ul><?php nav_main($dbc, $pageid) ?></ul></nav>
+<nav>
+	<ul><?php nav_main($dbc, $pageid) ?></ul>
+</nav>

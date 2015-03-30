@@ -1,5 +1,5 @@
 <footer class="footer">
-		
-	<p>My footer</p>	
-
-</footer>
+      <div class="container">
+        <p class="text-muted">Alex Janakos' Web Page</p>
+      </div>
+    </footer>
