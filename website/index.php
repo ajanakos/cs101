@@ -10,26 +10,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<?php include('config/css.php'); ?>
+	
 	<?php include('config/js.php'); ?>
 	
-	<button id="debug" class="btn btn-default">debug</button>
-	
-
 </head>
 
 <body>
-	
-	
-		
+
 		<?php include('template/logo.php'); ?>
 		
 		
 		<header class="mainHeader">
 		
-				
 	
-				
-				
 				<?php include('template/navigation.php'); ?>
 				
 				
@@ -56,12 +49,8 @@
 			
 			<?php include('template/footer.php'); ?>
 			
-			<div id="debug-console">
-				<pre>
-				<?php echo print_r($page); ?> 
-				</pre>
-			</div>
-		
+			<?php if($debug==1) { include('widgets/debug.php'); } ?>
+			
 
 		
 </body>

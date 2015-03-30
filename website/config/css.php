@@ -1,7 +1,9 @@
 <?php 
 // CSS:
 
-
+	$background_color = $color['background_color'];
+	$content_background_color = $color['content_background_color'];
+	$content_text_color = $color['content_text_color']; 
 
 ?>
 <!-- Latest compiled and minified CSS -->
@@ -24,7 +26,7 @@
 	}
 	body {
 		margin-bottom: 60px;
-		background-color: #D4CED9;
+		background-color: #<?php echo $background_color; ?>;
 		color: #000305; 
 		width: 70%;
 		margin: 0 auto;
@@ -68,10 +70,11 @@
 		background-color: #D4CED9;
 		text-shadow: none;
 		color: black;
+		border-radius: 10px;
 	}
 	
 	.mainHeader nav li a {
-		border-radius: 5px;
+		border-radius: 10px;
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;
 	}
@@ -85,11 +88,12 @@
 	}
 	
 	.content-1 {
-		background-color: #F5F5E9;
+		background-color: #<?php echo $content_background_color; ?>;
 		padding: 2% 2% 2% 2%;
 		border-radius: 10px;
 		margin: 2% 0;
 		width: 100%;
+		color: #<?php echo $content_text_color; ?>;
 	}
 	
 	
@@ -112,13 +116,19 @@
 	}
 	
 	#debug-console {
+		border-radius: 10px;
 		position: absolute;
-		top: 72px;
+		top: 150px;
 		left: 0px;
-		width: 15%;
+		width: 20%;
 		overflow-y: scroll;
-		height: 745px;
-
+		height: 700px;
+		background-color: #666;
+		box-shadow: 2px 2px 5px #666;
+	}
+	
+	.debug-header h1 {
+		color: white;
 	}
 			
 </style>

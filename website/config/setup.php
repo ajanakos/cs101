@@ -11,6 +11,9 @@ $dbc = mysqli_connect('localhost', 'dev', 'password', 'mypage') or die('No conne
 include('functions/data.php');
 include('functions/template.php');
 
+# Site Setup
+$debug = data_setting_value($dbc, 'debug-status');
+
 $site_title = 'Dynamic Page';
 
 // Assign value to page id
@@ -21,5 +24,10 @@ if(isset($_GET['page'])) {
 } else { $pageid = 1; } // Set $pageid to home page
 
 $page = data_page($dbc, $pageid);
+
+$color = css_color($dbc, $pageid)
+
+
+
 
 ?>
