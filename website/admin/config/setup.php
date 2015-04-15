@@ -2,7 +2,8 @@
 // setup file:
 
 # DB Connection:
-include('config/connection.php');
+include('../config/connection.php');
+
 
 # Constant
 // DEFINE('D_TEMPLATE', 'template');
@@ -23,9 +24,12 @@ if(isset($_GET['page'])) {
 	
 } else { $pageid = 1; } // Set $pageid to home page
 
+
 $page = data_page($dbc, $pageid);
 
 $color = css_color($dbc, $pageid);
+
+$user = user_data($dbc, $_SESSION['username']);
 
 
 
